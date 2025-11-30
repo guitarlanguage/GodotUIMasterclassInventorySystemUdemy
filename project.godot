@@ -13,3 +13,8 @@ config_version=5
 config/name="Godot_UI_Masterclass_Build_A_Dynamic_Inventory_System"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
