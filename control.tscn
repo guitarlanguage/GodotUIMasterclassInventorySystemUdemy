@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://cuiru7hgstmh4"]
+
+[ext_resource type="Texture2D" uid="uid://c0122jw4bhb74" path="res://Assets/Sprites/Armors/BanditLightArmor.png" id="1_62e2m"]
+[ext_resource type="Texture2D" uid="uid://bwljhw5jb0c2u" path="res://Assets/Sprites/Armors/CrusaderChainmail.png" id="2_qtu10"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 8
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+offset_right = 192.0
+offset_bottom = 192.0
+texture = ExtResource("1_62e2m")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -192.0
+offset_right = 192.0
+grow_vertical = 0
+texture = ExtResource("2_qtu10")
