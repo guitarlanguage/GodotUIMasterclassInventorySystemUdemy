@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://di0fcuwiqmnyr"]
+[gd_scene load_steps=2 format=3 uid="uid://di0fcuwiqmnyr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vkkc8"]
 
 [node name="UIInventory" type="Control"]
 layout_mode = 3
@@ -23,7 +25,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.7692192, 0.82087255, 0.83006126, 1)
+color = Color(0.65648717, 0.65648717, 0.65648717, 0.8235294)
 
 [node name="HBoxMain" type="HBoxContainer" parent="."]
 layout_mode = 1
@@ -37,7 +39,29 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="MarginContainerItemsColumn" type="MarginContainer" parent="HBoxMain"]
+custom_minimum_size = Vector2(560, 480)
 layout_mode = 2
 
 [node name="VBoxItemsColumn" type="VBoxContainer" parent="HBoxMain/MarginContainerItemsColumn"]
+layout_mode = 2
+
+[node name="VBoxInventoryCategories" type="VBoxContainer" parent="HBoxMain/MarginContainerItemsColumn/VBoxItemsColumn"]
+layout_mode = 2
+
+[node name="VSeparator" type="VSeparator" parent="HBoxMain"]
+layout_mode = 2
+theme_override_constants/separation = 20
+theme_override_styles/separator = SubResource("StyleBoxEmpty_vkkc8")
+
+[node name="MarginContainerInfoColumn" type="MarginContainer" parent="HBoxMain"]
+custom_minimum_size = Vector2(600, 480)
+layout_mode = 2
+
+[node name="VBoxInfoColumn" type="VBoxContainer" parent="HBoxMain/MarginContainerInfoColumn"]
+layout_mode = 2
+
+[node name="ControlUIItemInfo" type="Control" parent="HBoxMain/MarginContainerInfoColumn"]
+layout_mode = 2
+
+[node name="ControlUICharacterItemSlot" type="Control" parent="HBoxMain/MarginContainerInfoColumn"]
 layout_mode = 2
