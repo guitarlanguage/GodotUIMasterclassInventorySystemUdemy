@@ -24,3 +24,20 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.7692192, 0.82087255, 0.83006126, 1)
+
+[node name="HBoxMain" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 40.0
+offset_top = 40.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainerItemsColumn" type="MarginContainer" parent="HBoxMain"]
+layout_mode = 2
+
+[node name="VBoxItemsColumn" type="VBoxContainer" parent="HBoxMain/MarginContainerItemsColumn"]
+layout_mode = 2
